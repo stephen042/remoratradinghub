@@ -1,0 +1,34 @@
+/*! elementor - v3.12.2 - 23-04-2023 */
+.dialog-widget-content{background-color:var(--e-a-bg-default);position:absolute;border-radius:3px;box-shadow:2px 8px 23px 3px rgba(0,0,0,.2);overflow:hidden}.dialog-message{line-height:1.5;box-sizing:border-box}.dialog-close-button{cursor:pointer;position:absolute;margin-top:15px;right:15px;color:var(--e-a-color-txt);font-size:15px;line-height:1;transition:var(--e-a-transition-hover)}.dialog-close-button:hover{color:var(--e-a-color-txt-hover)}.dialog-prevent-scroll{overflow:hidden;max-height:100vh}.dialog-type-lightbox{position:fixed;height:100%;width:100%;bottom:0;left:0;background-color:rgba(0,0,0,.8);z-index:9999;-webkit-user-select:none;-moz-user-select:none;user-select:none}.flatpickr-calendar{width:280px}.flatpickr-calen.footer-width-fixer {
+    width: 100%;
+}
+
+/* Container fix for genesis themes */
+
+.ehf-template-genesis.ehf-header .site-header .wrap,
+.ehf-template-genesis.ehf-footer .site-footer .wrap,
+.ehf-template-generatepress.ehf-header .site-header .inside-header {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* Container fix for generatepress theme */
+
+.ehf-template-generatepress.ehf-header .site-header,
+.ehf-template-generatepress.ehf-footer .site-footer {
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+    background-color: transparent !important; /* override generatepress default white color for header */
+}
+
+.bhf-hidden {
+    display: none
+}
+
+/* Fix: Header hidden below the page content */
+.ehf-header #masthead {
+	z-index: 99;
+    position: relative;
+}
