@@ -21,7 +21,7 @@
                                     <li class="nav-item">
                                         <a href="verify.php" class="nav-link" data-key="t-analytics">Verify Users</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </li> <!-- end Dashboard Menu -->
@@ -42,6 +42,11 @@
                             </div>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link menu-link" href="all_trades.php">
+                                <i class="ri-arrow-left-down-line "></i> <span data-key="t-widgets">All Trades</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarwallet" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarwallet">
                                 <i class="ri-wallet-fill "></i> <span data-key="t-dashboards">Wallet Management</span>
                             </a>
@@ -55,10 +60,20 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li> 
-                         <li class="nav-item">
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link menu-link" href="plan_request.php">
                                 <i class="ri-arrow-left-down-line "></i> <span data-key="t-widgets">Plan Request</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="sub_request.php">
+                                <i class="ri-arrow-left-down-line "></i> <span data-key="t-widgets">Paid Subscriptions </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="Ai_trading.php">
+                                <i class="ri-bar-chart-box-fill"></i> <span data-key="t-widgets">Ai_trading</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -78,10 +93,15 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li> 
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="deposit.php">
                                 <i class="ri-arrow-left-down-line "></i> <span data-key="t-widgets">Deposits Request</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="subdeposit.php">
+                                <i class="ri-arrow-left-down-line "></i> <span data-key="t-widgets">Subscription Deposits Request</span>
                             </a>
                         </li>
                         <li class="nav-item">
@@ -101,10 +121,45 @@
                                     <li class="nav-item">
                                         <a href="plans.php" class="nav-link" data-key="t-analytics">All Plans</a>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
-                        </li> <!-- end Dashboard Menu -->
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarplansAi" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarplansAi">
+                                <i class=" ri-file-paper-2-line "></i> <span data-key="t-dashboards">Manage -Ai-trading Plans</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarplansAi">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="addaiplan.php" class="nav-link" data-key="t-analytics">Add Ai-trading Plan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="aiplans.php" class="nav-link" data-key="t-analytics">All Ai-trading Plans</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link menu-link" href="#sidebarplansSig" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarplansSig">
+                                <i class=" ri-file-paper-2-line "></i> <span data-key="t-dashboards">Manage signal Plans</span>
+                            </a>
+                            <div class="collapse menu-dropdown" id="sidebarplansSig">
+                                <ul class="nav nav-sm flex-column">
+                                    <li class="nav-item">
+                                        <a href="addsignalplan.php" class="nav-link" data-key="t-analytics">Add signal trading Plan</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="signalplan.php" class="nav-link" data-key="t-analytics">All Signal Plans</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- end Dashboard Menu -->
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="#sidebarmail" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarmail">
@@ -123,7 +178,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li> 
+                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link menu-link" href="settings.php">

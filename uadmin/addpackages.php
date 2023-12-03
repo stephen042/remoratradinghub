@@ -139,10 +139,10 @@ $err = "";
         <br>
         <?php if($vid == ""){
           ?>
-      <button style="" type="submit" class="btn btn-info" name="package11" >Add Package</button>
+      <button type="submit" class="btn btn-info" name="package11" >Add Package</button>
     <?php }else{?>
     <input type="hidden" name="mid"  value="<?php echo $id;?>" class="form-control">
-    <button style="" type="submit" class="btn btn-info" name="package11" >Update Package </button>
+    <button  type="submit" class="btn btn-info" name="package11" >Update Package </button>
     <?php }?>
 
 

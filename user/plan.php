@@ -60,7 +60,7 @@ if ($msg != "") {
                                 <div class="card-body">
                                     <span style="font-size: 25px;"><?php echo strtoupper($pp['pname']) ?></span><br>
                                     PACKAGE<br><br>
-
+                                        <hr>
                                     <div style="text-align: left;">
 
                                         <p>

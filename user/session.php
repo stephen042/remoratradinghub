@@ -21,6 +21,7 @@ include '../config/functions.php';
 			$fa2 = $data['2fa'];
 			$gender = $data['gender'];
 			$balance = $data['balance'];
+			$sub_balance = $data['sub_balance'];
 			$date = $data['date'];
 			$id_type = $data['id_type'];
 			$id_image = $data['id_image'];

@@ -49,11 +49,12 @@ if (isset($_POST['submit'])) {
     <meta name="theme-color" content="#2E89EA" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../images/favicon.ico" type="image/png">
+    <link rel="shortcut icon" href="../assets/images/logo.png" type="image/png">
     <!-- Touch icon -->
-    <link rel="apple-touch-icon-precomposed" href="../images/favicon.ico">
-    <title>Auth OTP - Nadex</title>
+    <link rel="apple-touch-icon-precomposed" href="../assets/images/logo.png">
+    <title>Auth OTP - Remoratradinghub</title>
 
     <script src="../dash/js/jquery-3.2.1.min.js"></script>
     <script src="../dash/notiflix-Notiflix-dfaf93f/dist/notiflix-aio-3.2.5.min.js"></script>
@@ -88,7 +89,7 @@ if (isset($_POST['submit'])) {
                             <div class="col-md-8 col-lg-6">
                                 <div class="text-center">
                                     <a class="navbar-brand" href="index-2.html">
-                                        <img src="../images/ndx_primary_logo_color%402x.png" alt="logo" height="36" class="d-inline-block">
+                                        <img src="../assets/images/logo.png" alt="logo" height="36" class="d-inline-block">
                                     </a>
                                     <p class="lead mt-1 mb-3">Welcome back <?php echo ucfirst($fname) ?>!</p>
                                     <?php  

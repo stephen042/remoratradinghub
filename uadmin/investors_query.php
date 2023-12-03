@@ -13,7 +13,7 @@ $sql3= "SELECT * FROM wbtc ";
 
 //fetch total investors online
 
-$sql2= "SELECT * FROM users WHERE session = 1 ";
+$sql2= "SELECT * FROM users ";
 			  $result2 = mysqli_query($link,$sql2);
 			  
 			  if(mysqli_num_rows($result2) > 0){

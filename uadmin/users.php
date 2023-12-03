@@ -60,7 +60,7 @@ overflow-x: auto;
 			                    
 
 			                    <div class="table-responsive table-card mt-3 mb-1">
-			                    	<table id="myTable" class="table-responsive" >  
+			                    	<table id="myTable" class="table-responsive table" >  
 								        <thead class="table-light">
 			                                <tr>
 			                                	<td></td>

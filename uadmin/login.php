@@ -60,7 +60,7 @@ $email = $password= "";
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->  
-  <link rel="icon" type="image/png" href="login/images/icons/favicon.ico"/>
+  <link rel="icon" type="image/png" href="../assets/images/logo.png"/>
 <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="login/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
@@ -90,7 +90,7 @@ $email = $password= "";
         <form class="login100-form validate-form" method="post" action="login.php">
          
           <span class="login100-form-title p-b-48">
-            <img src="../logo/logo.png" height="40" style="width: auto;">
+            <img src="../assets/images/logo.png" height="40" style="width: auto;">
           </span>
            <span class="login100-form-title p-b-26">
             Welcome

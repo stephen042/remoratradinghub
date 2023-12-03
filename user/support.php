@@ -47,7 +47,7 @@ include 'header.php';
                             <div class="card">
                                 <div class="card-body">
                                     <center>
-                                        <img src="img/logo2.png" alt="Logo" width="100px" class="mb-5">
+                                        <img src="img/logo.png" alt="Logo" width="100px" class="mb-5">
                                         <h4><?php echo $sitename ?> Support</h4><br>
 
                                         <span>

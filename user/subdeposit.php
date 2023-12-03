@@ -18,11 +18,11 @@ if (isset($_POST['deposit'])) {
         if ($check === false) {
             $err = "Please Select an Image";   
         }else{
-        	$insert = mysqli_query($link, "INSERT INTO btc (`usd`, `method`, `email`, `status`, `proof`, `uto`, `date`) VALUES ('$amount', '$account', '$email', '$status', '$imgname', '$to', '$date' ) ");
+        	$insert = mysqli_query($link, "INSERT INTO subscribe (`usd`, `method`, `email`, `status`, `proof`, `uto`, `date`) VALUES ('$amount', '$account', '$email', '$status', '$imgname', '$to', '$date' ) ");
         	if ($insert) {
         		move_uploaded_file($tempname, $folder);
-        		$subject = $sitename." Deposit";
-        		$body = "<h4> ".$name." Deposit </h4> <p> Your deposit of $ ".$amount." of ".$account." has has been submitted, your account will be credited once it is confirmed </p> ";
+        		$subject = $sitename."subscription Deposit";
+        		$body = "<h4> ".$name."Subscription Deposit </h4> <p> Your deposit of $ ".$amount." of ".$account." has has been submitted, your account will be credited once it is confirmed </p> ";
         		sendMail($email, $name, $subject, $body);
         		$msg = "Deposit has been submitted";
         	}
@@ -38,7 +38,7 @@ if (isset($_POST['deposit'])) {
 <?php  
 if ($msg != "") {
 	echo userAlert("success", $msg);
-	echo pageRedirect("3", "deposit.php");
+	echo pageRedirect("3", "subdeposit.php");
 }
 
 if ($err != "") {
@@ -71,10 +71,11 @@ if ($err != "") {
                         <div class="col-md-12 grid-margin">
                             <div class="d-flex justify-content-between flex-wrap">
                                 <div class=" align-items-end flex-wrap">
-
+                                <span style="color: rgba(180, 180, 180, 0.7)">Subscription Balance :</p>
+                            <span style="color: rgba(180, 180, 180, 0.7);font-size: 23px"><?php echo $sub_balance ?></p>
                                     <div class="d-flex">
-                                        <i class="mdi mdi-home text-muted hover-cursor"></i>
-                                        <p class="text-muted mb-0 hover-cursor">&nbsp;/&nbsp;Deposit
+                                    <button type="button" onclick="history.back()" class="btn btn-success btn-sm text-white">
+                                    Back </button>
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +86,7 @@ if ($err != "") {
                         <div class="col-md-6 grid-margin stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <p class="mb-3"><b>Deposit Funds</b></p><br>
+                                    <p class="mb-3"><b><span class="text-info text-uppercase">Deposit Funds For Your Subscriptions</span></b></p><br>
                                     <p class="mb-3">Select payment method</p>
 
                                     <div class="row">
@@ -181,7 +182,8 @@ if ($err != "") {
                                                     Payment will be reviewed and processed.</span></div>
                                             <div style="text-align: center;" class="col-md-6">
                                                 
-                                            <img src="https://chart.googleapis.com/chart?chs=225x225&chld=L|2&cht=qr&chl=<?php echo $btc;?>" alt="" class="img-fluid">
+                                                <img src="https://chart.googleapis.com/chart?chs=225x225&chld=L|2&cht=qr&chl=<?php echo $btc;?>" alt="" class="img-fluid">
+
                                             </div>
                                         </div>
                                         <br>
@@ -194,7 +196,7 @@ if ($err != "") {
                                                     class="fa fa-copy"></i></a>
                                         </div>
 
-                                        <form action="deposit.php" method="POST" enctype="multipart/form-data">
+                                        <form action="subdeposit.php" method="POST" enctype="multipart/form-data">
                                             <input type="hidden" name="_token"
                                                 value="dB8QbQtUBrLHAkuRYxdPpMFfhJNSl6VWhyfNH9EJ"> 
                                                 <input type="hidden" name="account" value="bitcoin">
@@ -247,7 +249,7 @@ if ($err != "") {
                                                     class="fa fa-copy"></i></a>
                                         </div>
 
-                                        <form action="deposit.php" method="POST"
+                                        <form action="subdeposit.php" method="POST"
                                             enctype="multipart/form-data">
                                              <input type="hidden"
                                                 name="account" value="Ethereum">
@@ -301,7 +303,7 @@ if ($err != "") {
                                                     class="fa fa-copy"></i></a>
                                         </div>
 
-                                        <form action="deposit.php" method="POST"
+                                        <form action="subdeposit.php" method="POST"
                                             enctype="multipart/form-data">
                                             <input type="hidden" name="_token"
                                                 value="dB8QbQtUBrLHAkuRYxdPpMFfhJNSl6VWhyfNH9EJ"> <input type="hidden"
@@ -356,7 +358,7 @@ if ($err != "") {
                                                     class="fa fa-copy"></i></a>
                                         </div>
 
-                                        <form action="deposit.php" method="POST"
+                                        <form action="subdeposit.php" method="POST"
                                             enctype="multipart/form-data">
                                             <input type="hidden" name="_token"
                                                 value="dB8QbQtUBrLHAkuRYxdPpMFfhJNSl6VWhyfNH9EJ"> <input type="hidden"
@@ -410,7 +412,7 @@ if ($err != "") {
                                                     class="fa fa-copy"></i></a>
                                         </div>
 
-                                        <form action="deposit.php" method="POST"
+                                        <form action="subdeposit.php" method="POST"
                                             enctype="multipart/form-data">
                                             <input type="hidden" name="_token"
                                                 value="dB8QbQtUBrLHAkuRYxdPpMFfhJNSl6VWhyfNH9EJ"> <input type="hidden"
@@ -463,7 +465,7 @@ if ($err != "") {
                                                     class="fa fa-copy"></i></a>
                                         </div>
 
-                                        <form action="deposit.php" method="POST"
+                                        <form action="subdeposit.php" method="POST"
                                             enctype="multipart/form-data">
                                             <input type="hidden" name="_token"
                                                 value="dB8QbQtUBrLHAkuRYxdPpMFfhJNSl6VWhyfNH9EJ"> <input type="hidden"
@@ -501,7 +503,7 @@ if ($err != "") {
                         <div class="col-md-12 stretch-card">
                             <div class="card">
                                 <div class="card-body">
-                                    <p>Deposit History</p>
+                                    <p>Subscription Deposit History</p>
 
                                     <div class="table-responsive" style="max-height: 400px;">
                                         <table class="table table-striped">
@@ -515,7 +517,7 @@ if ($err != "") {
                                             </thead>
                                             <tbody class="tb-text-md">
                                             	<?php 
-                                            		$qu = mysqli_query($link, "SELECT * FROM btc WHERE email = '$email' ORDER BY id DESC ");
+                                            		$qu = mysqli_query($link, "SELECT * FROM subscribe WHERE email = '$email' ORDER BY id DESC ");
                                             		if (mysqli_num_rows($qu) > 0) {
                                             			while ($rr2 = mysqli_fetch_assoc($qu)) {	
                                             	?>
