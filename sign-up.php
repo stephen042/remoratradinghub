@@ -61,12 +61,6 @@ if (isset($_POST['reg'])) {
         $gender = text_input($_POST["gender"]);
     }
 
-    if (empty(text_input($_POST["phone"])) && text_input($_POST['phone'] == "")) {
-        $err = "Please enter phone number.";
-    } else {
-        $phone = text_input($_POST["phone"]);
-    }
-
     if (empty(text_input($_POST["country"])) && text_input($_POST['country'] == "")) {
         $err = "Please select a country.";
     } else {
@@ -84,6 +78,7 @@ if (isset($_POST['reg'])) {
     }
 
     if (empty($err)) {
+        $phone = 00000;
         $date =  date('d-m-Y');
         $code = "0123456789";
         $fa2_code = str_shuffle($code);
