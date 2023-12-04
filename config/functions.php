@@ -6,8 +6,8 @@ use PHPMailer\PHPMailer\Exception;
 
 function sendMail($email, $name, $subject, $body){
 	global $sitemail, $sitename,$siteurl;
-	require_once "../PHPMailer/PHPMailer.php";
-    require_once '../PHPMailer/Exception.php';
+	require_once "PHPMailer/PHPMailer.php";
+    require_once 'PHPMailer/Exception.php';
 
     $mail = new PHPMailer;
     $mail->setFrom($sitemail);
