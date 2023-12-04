@@ -217,12 +217,6 @@ if (isset($_POST['reg'])) {
                                             </div>
                                             <div class="col-12">
                                                 <div class="input-group">
-                                                    <input type="text" name="phone" class="form-control" placeholder="Phone" required="" value="<?php echo $phone ?>" aria-label="Phone">
-                                                    <span class="input-group-text"><i class="fas fa-phone fa-xs text-muted"></i></span>
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="input-group">
                                                     <select name="gender" class="form-control" aria-label="Gender">
                                                         <option value="">Gender</option>
                                                         <option value="Male">Male</option>
